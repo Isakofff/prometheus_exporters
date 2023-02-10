@@ -1,0 +1,19 @@
+[Unit]
+Description=Prometheus Exporter
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/home/user/venv/bin/python /home/user/run.py
+NoNewPrivileges=true
+PrivateDevices=true
+PrivateTmp=true
+ProtectControlGroups=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectSystem=full
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=multi-user.target

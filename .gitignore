@@ -1,0 +1,7 @@
+*.iml
+*.xml
+.DS_Store
+.git/
+.idea/
+__pycache__/
+venv/
